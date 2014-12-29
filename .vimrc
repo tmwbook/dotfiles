@@ -15,7 +15,10 @@ set t_Co=256
 
 " Custom settings
 syntax on
-filetype plugin indent on
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
 set number
 
