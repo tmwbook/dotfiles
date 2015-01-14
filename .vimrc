@@ -6,6 +6,8 @@
 "  python/vim-jedi
 "  vim-airline
 "  git/fugitive
+"  YouCompleteMe
+" let g:jedi#auto_initialization=0
 execute pathogen#infect()
 
 " for vim-airline
