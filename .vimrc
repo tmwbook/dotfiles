@@ -6,14 +6,23 @@
 "  python/vim-jedi
 "  vim-airline
 "  git/fugitive
-"  YouCompleteMe
-" let g:jedi#auto_initialization=0
+"  syntastic
 execute pathogen#infect()
 
 " for vim-airline
 set laststatus=2
 let g:airline_theme="badwolf"
 set t_Co=256
+
+" for syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " Custom settings
 syntax on
