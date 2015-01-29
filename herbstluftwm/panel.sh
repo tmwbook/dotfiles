@@ -117,7 +117,13 @@ hc pad $monitor $panel_height
         echo -n "$separator"
         echo -n "^bg()^fg() ${windowtitle//^/^^}"
         # small adjustments
-        right="$separator^bg() $date $separator"
+        # This is my adjusted setting, maybe this belongs in the
+        # event generator?
+        cur_bat=`cat /sys/class/power_supply/BAT0/charge_now`
+        full_bat=`cat /sys/class/power_supply/BAT0/charge_full`
+        bat_percent=`echo $cur_bat/$full_bat*100 | bc -l | cut -c 1-2`
+
+        right="^fg()Battery:$bat_percent% $separator^bg() $date $separator"
         right_text_only=$(echo -n "$right" | sed 's.\^[^(]*([^)]*)..g')
         # get width of right aligned text.. and add some space..
         width=$($textwidth "$font" "$right_text_only    ")
