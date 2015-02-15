@@ -7,6 +7,8 @@
 "  vim-airline
 "  git/fugitive
 "  syntastic
+"  rust.vim
+"  vim-autoclose
 execute pathogen#infect()
 
 " for vim-airline
