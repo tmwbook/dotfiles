@@ -34,6 +34,7 @@ Plug 'kien/ctrlp.vim'
 "Lord have mercy on your soul
 Plug 'wikitopian/hardmode'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'townk/vim-autoclose'
 
 call plug#end()
 
