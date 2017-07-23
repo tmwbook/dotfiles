@@ -28,6 +28,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'wikitopian/hardmode'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'townk/vim-autoclose'
+Plug 'scrooloose/nerdtree'
 
 call plug#end()
 
