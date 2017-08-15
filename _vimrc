@@ -4,12 +4,18 @@ set number
 set relativenumber
 
 set foldmethod=indent
+set nofoldenable
 
 set tabstop=4
 "Enable for spaces w/ tabs
 "set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
-colorscheme desert
+colorscheme slate
+
+"leader mappings for basic use
+let mapleader = ","
+
+"Example: nnoremap <Leader>L i<C-x><C-l>
 
 "Change bad default fonts
 if has("gui_running")
@@ -58,6 +64,9 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline_theme='kolor'
+
+"NERDtree
+map <C-n> :NERDTreeToggle<CR>
 
 "Default windows vimrc
 source $VIMRUNTIME/vimrc_example.vim
