@@ -16,6 +16,7 @@ colorscheme slate
 let mapleader = ","
 
 "Example: nnoremap <Leader>L i<C-x><C-l>
+nnoremap <Leader>vr :source %<cr>
 
 "Change bad default fonts
 if has("gui_running")
@@ -42,6 +43,7 @@ Plug 'wikitopian/hardmode'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'townk/vim-autoclose'
 Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
