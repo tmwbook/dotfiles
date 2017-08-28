@@ -25,6 +25,9 @@ nnoremap <Leader>wj <C-w>j<cr>
 nnoremap <Leader>wk <C-w>k<cr>
 nnoremap <Leader>wl <C-w>l<cr>
 
+"Chromebook Nerdtree togle
+nnoremap <Leader>n :NERDTreeToggle<CR>
+
 set shiftwidth=4
 
 "Plug-Vim
